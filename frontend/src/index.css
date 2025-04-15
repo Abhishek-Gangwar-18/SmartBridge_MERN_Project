@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 Base Styles */
+@layer base {
+  section {
+    @apply py-[75px];
+  }
+}
+
+/* 🌟 Components */
+@layer components {
+  .container {
+    @apply w-[80%] max-w-[1440px] px-5 mx-auto;
+  }
+
+  .btn {
+    @apply bg-[#0067ff] py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px] hover:bg-[#0056d2] transition duration-300 ease-in-out;
+  }
+
+  .heading {
+    @apply text-[44px] leading-[54px] font-[700] text-gray-900;
+  }
+
+  .text_para {
+    @apply text-[18px] leading-[30px] font-[400] text-gray-700 mt-[18px];
+  }
+
+  .header {
+    @apply bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+  }
+
+  .hero__section {
+    @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover;
+  }
+  .form__label{
+    @apply text-textColor font-semibold text-[16px] leading-7 mb-2;
+  }
+  .form__input{
+    @apply w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer rounded-md
+  }
+}
